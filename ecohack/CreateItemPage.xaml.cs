@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.DirectoryServices.ActiveDirectory;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,9 +21,26 @@ namespace ecohack
     /// </summary>
     public partial class CreateItemPage : Page
     {
-        public CreateItemPage()
+        Frame mMain = null;
+        public CreateItemPage(Frame pMain)
         {
             InitializeComponent();
+            mMain = pMain;
+        }
+
+        private void Home_Button_Clicked(object sender, RoutedEventArgs e)
+        {
+            mMain.Content = new HomePage(mMain);
+        }
+
+        private void User_Button_Clicked(object sender, RoutedEventArgs e)
+        {
+            mMain.Content = new AccountPage(mMain);
+        }
+
+        private void Back_Button_Clicked(object sender, RoutedEventArgs e)
+        {
+            mMain.Content = new MenuPage(mMain);
         }
     }
 }

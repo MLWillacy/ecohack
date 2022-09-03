@@ -5,10 +5,27 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:ecohack"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="640" d:DesignWidth="360"
       Title="AccountPage">
 
     <Grid>
-        
+        <Grid.Background>
+            <SolidColorBrush Color="#32DC21"></SolidColorBrush>
+        </Grid.Background>
+        <StackPanel  x:Name="AccountPage_Panel" Orientation="Vertical" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Visibility="Visible" >
+            <StackPanel x:Name="Header" Orientation="Horizontal" Background="#1c8e3e" Height="80">
+                <Button x:Name="Home_Button" Click="Home_Button_Clicked" Height="75" Width="75" HorizontalAlignment="Left" Margin="10,0,0,0" Background="#1c8e3e" BorderBrush="#1c8e3e">
+                    <StackPanel>
+                        <Image x:Name="Home_Image" Source="/Images/Home.png"/>
+                    </StackPanel>
+                </Button>
+                <Button x:Name="User_Button" Click="User_Button_Clicked" Height="75" Width="75" HorizontalAlignment="Right" Margin="190,0,0,0" Background="#1c8e3e" BorderBrush="#1c8e3e">
+                    <StackPanel>
+                        <Image x:Name="User_Image" Source="/Images/UserIcon.png"/>
+                    </StackPanel>
+                </Button>
+            </StackPanel>
+            <TextBox Text="account"/>
+        </StackPanel>
     </Grid>
 </Page>

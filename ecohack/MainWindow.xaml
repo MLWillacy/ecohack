@@ -7,6 +7,10 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="640" Width="360">
     <Grid>
+        <Grid.Background>
+            <SolidColorBrush Color="#32DC21"></SolidColorBrush>
+        </Grid.Background>
 
+        <Frame x:Name="Main"  NavigationUIVisibility="Hidden" />
     </Grid>
 </Window>

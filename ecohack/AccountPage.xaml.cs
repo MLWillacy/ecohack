@@ -20,9 +20,21 @@ namespace ecohack
     /// </summary>
     public partial class AccountPage : Page
     {
-        public AccountPage()
+        Frame mMain = null;
+        public AccountPage(Frame pMain)
         {
             InitializeComponent();
+            mMain = pMain;
+        }
+
+        private void Home_Button_Clicked(object sender, RoutedEventArgs e)
+        {
+            mMain.Content = new HomePage(mMain);
+        }
+
+        private void User_Button_Clicked(object sender, RoutedEventArgs e)
+        {
+            mMain.Content = new AccountPage(mMain);
         }
     }
 }
