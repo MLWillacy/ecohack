@@ -11,10 +11,12 @@ namespace ecohack
     {
         List<MenuItem> mMenuItems = new List<MenuItem>();
         int mMenuPosition = 0;
+        User mUser;
 
-        public AppManager()
+        public AppManager(User pUser)
         {
             LoadMenuItems();
+            mUser = pUser;
         }
 
         public int MenuPosition
@@ -22,6 +24,12 @@ namespace ecohack
             set { mMenuPosition = value; }
             get { return mMenuPosition; }
         }
+
+        public User ThisUser
+        {
+            get { return mUser; }
+        }
+        
 
         public int MenuLength
         {

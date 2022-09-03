@@ -15,10 +15,12 @@
     <None Remove="Images\FullStar.PNG" />
     <None Remove="Images\HalfStar.PNG" />
     <None Remove="Images\Home.PNG" />
+    <None Remove="Images\HomeBackground.PNG" />
     <None Remove="Images\Plate.PNG" />
     <None Remove="Images\ScrollDown.PNG" />
     <None Remove="Images\ScrollUp.PNG" />
     <None Remove="Images\UserIcon.PNG" />
+    <None Remove="Images\UserIcon2.PNG" />
   </ItemGroup>
 
   <ItemGroup>
@@ -46,6 +48,9 @@
     <Resource Include="Images\Home.PNG">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="Images\HomeBackground.PNG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Images\Plate.PNG">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
@@ -56,6 +61,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Images\UserIcon.PNG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\UserIcon2.PNG">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>

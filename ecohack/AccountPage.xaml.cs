@@ -27,6 +27,15 @@ namespace ecohack
             InitializeComponent();
             mMain = pMain;
             mInstance = pInstance;
+            LoadPage();
+        }
+
+        private void LoadPage()
+        {
+            UserName_Text.Text = mInstance.ThisUser.Name;
+            if (mInstance.ThisUser.Pence < 10)
+            { Balance_Text.Text = "£" + mInstance.ThisUser.Pound + ".0" + mInstance.ThisUser.Pence; }
+            else { Balance_Text.Text = "£" + mInstance.ThisUser.Pound + "." + mInstance.ThisUser.Pence; }
         }
 
         private void Home_Button_Clicked(object sender, RoutedEventArgs e)

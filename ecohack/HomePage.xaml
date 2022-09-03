@@ -25,9 +25,12 @@
                     </StackPanel>
                 </Button>
             </StackPanel>
-            <Button x:Name="Plate_Button" Click="Plate_Button_Clicked" >
-                <StackPanel>
-                    <Image x:Name="Plate_Image" Source="/Images/Plate.png"/>
+            <StackPanel Background="#7f7f7f" >
+                <Image x:Name="Background_Image" Source="/Images/HomeBackground.png" Width="360"  Height="400" />
+            </StackPanel>
+            <Button x:Name="Plate_Button" Click="Plate_Button_Clicked" Background="#32DC21" BorderBrush="#32DC21">
+                <StackPanel >
+                    <Image x:Name="Plate_Image" Source="/Images/Plate.png" Width="100" Height="100" />
                 </StackPanel>
             </Button>
 
