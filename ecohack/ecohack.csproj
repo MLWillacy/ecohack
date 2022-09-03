@@ -11,9 +11,20 @@
     <None Remove="Images\Ad.PNG" />
     <None Remove="Images\AddItem.PNG" />
     <None Remove="Images\Back.PNG" />
+    <None Remove="Images\EmptyStar.PNG" />
+    <None Remove="Images\FullStar.PNG" />
+    <None Remove="Images\HalfStar.PNG" />
     <None Remove="Images\Home.PNG" />
     <None Remove="Images\Plate.PNG" />
+    <None Remove="Images\ScrollDown.PNG" />
+    <None Remove="Images\ScrollUp.PNG" />
     <None Remove="Images\UserIcon.PNG" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\HalfStar.PNG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
 
   <ItemGroup>
@@ -26,10 +37,22 @@
     <Resource Include="Images\Back.PNG">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="Images\EmptyStar.PNG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\FullStar.PNG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Images\Home.PNG">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Images\Plate.PNG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\ScrollDown.PNG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\ScrollUp.PNG">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Images\UserIcon.PNG">
