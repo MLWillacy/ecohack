@@ -41,8 +41,8 @@
                 <StackPanel x:Name="MenuItems_Panel" Orientation="Vertical">
                     <Button x:Name="MenuItem1_Button" Click="MenuItem1_Button_Clicked" Background="WhiteSmoke" Margin="0,20,0,0" HorizontalAlignment="Left" MinWidth="150" VerticalAlignment="Top" BorderBrush="#32dc21" Width="250">
                         <StackPanel>
-                            <Label x:Name="MenuItem1_Title" Content="Title" FontSize="30" Background="WhiteSmoke"/>
-                            <Label x:Name="MenuItem1_Author" Content="Author: 10" FontSize="15"/>
+                            <Label x:Name="MenuItem1_Title" Content="Title" FontSize="30" Background="WhiteSmoke" Height="45"/>
+                            <Label x:Name="MenuItem1_Author" Content="Author: 10" FontSize="15" Height="30"/>
                             <StackPanel Orientation="Horizontal" MinHeight="10" >
                                 <Label x:Name="MenuItem1_Rating_Text" Content="Rating:" FontSize="15"/>
                                 <Image x:Name="MenuItem1Star1_Image" Margin="0,0,0,0" Source="/Images/FullStar.png" MinHeight="25" Width="25"/>
@@ -55,8 +55,8 @@
                     </Button>
                     <Button x:Name="MenuItem2_Button" Click="MenuItem2_Button_Clicked" Background="WhiteSmoke" Margin="0,20,0,0" HorizontalAlignment="Left" MinWidth="150" VerticalAlignment="Top" BorderBrush="#32dc21" Width="250">
                         <StackPanel>
-                            <Label x:Name="MenuItem2_Title" Content="Title" FontSize="30" Background="WhiteSmoke"/>
-                            <Label x:Name="MenuItem2_Author" Content="Author: 10" FontSize="15"/>
+                            <Label x:Name="MenuItem2_Title" Content="Title" FontSize="30" Background="WhiteSmoke" Height="45"/>
+                            <Label x:Name="MenuItem2_Author" Content="Author: 10" FontSize="15" Height="30"/>
                             <StackPanel Orientation="Horizontal" MinHeight="10" >
                                 <Label x:Name="MenuItem2_Rating_Text" Content="Rating:" FontSize="15"/>
                                 <Image x:Name="MenuItem2Star1_Image" Margin="0,0,0,0" Source="/Images/FullStar.png" MinHeight="25" Width="25"/>
@@ -69,8 +69,8 @@
                     </Button>
                     <Button x:Name="MenuItem3_Button" Click="MenuItem3_Button_Clicked" Background="WhiteSmoke" Margin="0,20,0,0" HorizontalAlignment="Left" MinWidth="150" VerticalAlignment="Top" BorderBrush="#32dc21" Width="250">
                         <StackPanel>
-                            <Label x:Name="MenuItem3_Title" Content="Title" FontSize="30" Background="WhiteSmoke"/>
-                            <Label x:Name="MenuItem3_Author" Content="Author: 10" FontSize="15"/>
+                            <Label x:Name="MenuItem3_Title" Content="Title" FontSize="30" Background="WhiteSmoke" Height="45"/>
+                            <Label x:Name="MenuItem3_Author" Content="Author: 10" FontSize="15" Height="30"/>
                             <StackPanel Orientation="Horizontal" MinHeight="10" >
                                 <Label x:Name="MenuItem3_Rating_Text" Content="Rating:" FontSize="15"/>
                                 <Image x:Name="MenuItem3Star1_Image" Margin="0,0,0,0" Source="/Images/FullStar.png" MinHeight="25" Width="25"/>

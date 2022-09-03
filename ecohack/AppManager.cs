@@ -30,14 +30,15 @@ namespace ecohack
 
         private void LoadMenuItems()
         {
-            string[] lines = File.ReadAllLines("MenuItems.txt");
-
-            for (int i = 2; (i + 5) < lines.Length + 1; i = i + 5)
+            foreach (string file in Directory.EnumerateFiles("MenuItems", "*.txt"))
             {
-                string title = lines[i + 1];
-                string author = lines[i + 2];
-                int rating = int.Parse(lines[i + 3]);
-                string descrip = lines[i + 4];
+                string contents = File.ReadAllText(file);
+                string[] lines = contents.Split('\n');
+
+                string title = lines[0];
+                string author = lines[1];
+                int rating = int.Parse(lines[2]);
+                string descrip = lines[3];
                 mMenuItems.Add(new MenuItem(title, author, rating, descrip));
             }
         }
