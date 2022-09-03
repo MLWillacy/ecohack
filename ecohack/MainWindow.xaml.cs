@@ -23,6 +23,7 @@ namespace ecohack
         public MainWindow()
         {
             InitializeComponent();
+            Main.Content = new LoginPage(Main);
         }
     }
 }
