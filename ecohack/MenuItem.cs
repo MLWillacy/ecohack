@@ -10,7 +10,7 @@ namespace ecohack
     {
         string mTitle;
         string mAuthor;
-        int mRating;
+        float mRating;
         string mDescription;
         float mSalty;
         float mSweet;
@@ -19,7 +19,7 @@ namespace ecohack
         float mSpice;
         string mPath;
 
-        public MenuItem(string pTitle, string pAuthor, int pRating, string pDescription, string pTastes, string pPath)
+        public MenuItem(string pTitle, string pAuthor, float pRating, string pDescription, string pTastes, string pPath)
         {
             mTitle = pTitle;
             mAuthor = pAuthor;
@@ -40,8 +40,18 @@ namespace ecohack
         public string Author
         { get { return mAuthor; } }
 
-        public int Rating
-        { get { return mRating; } }
+        public float Rating
+        {
+            get { return mRating; }
+            set 
+            { 
+                if (value > 5)
+                { value = 5; }
+                mRating = value; 
+            }
+        }
+
+
 
         public string Description
         { get { return mDescription; } }

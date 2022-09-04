@@ -22,6 +22,7 @@ namespace ecohack
     {
         Frame mMain;
         AppManager mInstance;
+        List<MenuItem> itemsToDisplay;
         public MenuPage(Frame pMain, AppManager pInstance)
         {
             InitializeComponent();
@@ -32,7 +33,7 @@ namespace ecohack
 
         private void loadMenuItems()
         {
-            List<MenuItem> itemsToDisplay = mInstance.getMenuItems();
+            itemsToDisplay = mInstance.getMenuItems();
             if (itemsToDisplay == null)
             {
                 return;
@@ -178,17 +179,17 @@ namespace ecohack
 
         private void MenuItem1_Button_Clicked(object sender, RoutedEventArgs e)
         {
-
+            mMain.Content = new ReviewPage(mMain, mInstance, itemsToDisplay[0]);
         }
 
         private void MenuItem2_Button_Clicked(object sender, RoutedEventArgs e)
         {
-
+            mMain.Content = new ReviewPage(mMain, mInstance, itemsToDisplay[1]);
         }
 
         private void MenuItem3_Button_Clicked(object sender, RoutedEventArgs e)
         {
-
+            mMain.Content = new ReviewPage(mMain, mInstance, itemsToDisplay[2]);
         }
     }
 }

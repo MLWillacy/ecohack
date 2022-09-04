@@ -45,7 +45,7 @@ namespace ecohack
 
                 string title = lines[0];
                 string author = lines[1];
-                int rating = int.Parse(lines[2]);
+                float rating = float.Parse(lines[2]);
                 string descrip = lines[3];
                 string tastes = lines[4];
                 mMenuItems.Add(new MenuItem(title, author, rating, descrip, tastes, file));

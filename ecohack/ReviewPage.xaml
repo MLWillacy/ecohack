@@ -5,10 +5,64 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:ecohack"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="640" d:DesignWidth="360"
       Title="ReviewPage">
 
     <Grid>
-        
+        <Grid.Background>
+            <SolidColorBrush Color="#32DC21"></SolidColorBrush>
+        </Grid.Background>
+        <StackPanel  x:Name="ReviewPage_Panel" Orientation="Vertical" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Visibility="Visible" >
+            <StackPanel x:Name="Header" Orientation="Horizontal" Background="#1c8e3e" Height="80">
+                <Button x:Name="Home_Button" Click="Home_Button_Clicked" Height="75" Width="75" HorizontalAlignment="Left" Margin="10,0,0,0" Background="#1c8e3e" BorderBrush="#1c8e3e">
+                    <StackPanel>
+                        <Image x:Name="Home_Image" Source="/Images/Home.png"/>
+                    </StackPanel>
+                </Button>
+                <Button x:Name="User_Button" Click="User_Button_Clicked" Height="75" Width="75" HorizontalAlignment="Right" Margin="190,0,0,0" Background="#1c8e3e" BorderBrush="#1c8e3e">
+                    <StackPanel>
+                        <Image x:Name="User_Image" Source="/Images/UserIcon.png"/>
+                    </StackPanel>
+                </Button>
+            </StackPanel>
+            <StackPanel x:Name="Review_panel" VerticalAlignment="Center" HorizontalAlignment="Center" Background="WhiteSmoke" Width="300" Margin="0,20,0,0" Height="350" >
+                <Label x:Name="Title_text" Content="enter title" FontSize="40" Margin="0,10,0,0"/>
+                <Label x:Name="Descrip_text" Content="enter instructions"  Margin="10,10,10,0"/>
+            </StackPanel>
+            <StackPanel x:Name="Bottom_Panel" Orientation="Horizontal">
+                <Button x:Name="Back_Button" Click="Back_Button_Clicked" Height="75" Width="75" HorizontalAlignment="Right" Margin="20,0,0,0" Background="#32dc21" BorderBrush="#32dc21">
+                    <StackPanel>
+                        <Image x:Name="Back_Image" Source="/Images/Back.png"/>
+                    </StackPanel>
+                </Button>
+                <Button x:Name="Submit_Button" Click="Submit_Button_Clicked" Height="75" Width="100" HorizontalAlignment="Right" Margin="150,0,0,0" Background="#32dc21" BorderBrush="#32dc21">
+                    <StackPanel>
+                        <TextBlock Text="I tried this!" FontSize="20" Background="DodgerBlue"/>
+                    </StackPanel>
+                </Button>
+            </StackPanel>
+        </StackPanel>
+        <Button x:Name="Review_Button" Background="WhiteSmoke" MinWidth="150" BorderBrush="#32dc21" Width="250" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,150" Visibility="Hidden" >
+            <StackPanel>
+                <Label x:Name="MenuItem3_Title" Content="Leave a Review!" FontSize="30" Background="WhiteSmoke" Height="45" HorizontalAlignment="Center"/>
+                <StackPanel Orientation="Horizontal" MinHeight="10" HorizontalAlignment="Center" >
+                    <Button x:Name="star1_button" Click="star1_button_clicked" >
+                        <Image x:Name="MenuItem3Star1_Image" Margin="0,0,0,0" Source="/Images/emptyStar.png" MinHeight="25" Width="25"/>
+                    </Button>
+                    <Button x:Name="star2_button" Click="star2_button_clicked" >
+                        <Image x:Name="MenuItem3Star2_Image" Margin="0,0,0,0" Source="/Images/emptyStar.png" MinHeight="25" Width="25"/>
+                    </Button>
+                    <Button x:Name="star3_button" Click="star3_button_clicked" >
+                        <Image x:Name="MenuItem3Star3_Image" Margin="0,0,0,0" Source="/Images/emptyStar.png" MinHeight="25" Width="25"/>
+                    </Button>
+                    <Button x:Name="star4_button" Click="star4_button_clicked" >
+                        <Image x:Name="MenuItem3Star4_Image" Margin="0,0,0,0" Source="/Images/emptyStar.png" MinHeight="25" Width="25"/>
+                    </Button>
+                    <Button x:Name="star5_button" Click="star5_button_clicked" >
+                        <Image x:Name="MenuItem3Star5_Image" Margin="0,0,0,0" Source="/Images/emptyStar.png" MinHeight="25" Width="25"/>
+                    </Button>
+                </StackPanel>
+            </StackPanel>
+        </Button>
     </Grid>
 </Page>
