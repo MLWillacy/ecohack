@@ -23,7 +23,7 @@ namespace ecohack
         public MainWindow()
         {
             InitializeComponent();
-            User u = new User("Matt");
+            User u = new User("Matt.txt");
             AppManager instanceManager = new AppManager(u);
             Main.Content = new HomePage(Main, instanceManager);
         }

@@ -56,27 +56,32 @@ namespace ecohack
 
         private void Salty_Text_Changed(object sender, TextChangedEventArgs e)
         {
-            mInstance.ThisUser.Salty = float.Parse(Salty_Textbox.Text);
+            try { mInstance.ThisUser.Salty = float.Parse(Salty_Textbox.Text); }
+            catch { }
         }
 
         private void Sweet_Text_Changed(object sender, TextChangedEventArgs e)
         {
-            mInstance.ThisUser.Sweet = float.Parse(Sweet_Textbox.Text);
+            try { mInstance.ThisUser.Sweet = float.Parse(Sweet_Textbox.Text); }
+            catch { }
         }
 
         private void Sour_Text_Changed(object sender, TextChangedEventArgs e)
         {
-            mInstance.ThisUser.Sour = float.Parse(Sour_Textbox.Text);
+            try { mInstance.ThisUser.Sour = float.Parse(Sour_Textbox.Text); }
+            catch { }
         }
 
         private void Bitter_Text_Changed(object sender, TextChangedEventArgs e)
         {
-            mInstance.ThisUser.Bitter = float.Parse(Bitter_Textbox.Text);
+            try { mInstance.ThisUser.Sour = float.Parse(Sour_Textbox.Text); }
+            catch { }
         }
 
         private void Spice_Text_Changed(object sender, TextChangedEventArgs e)
         {
-            mInstance.ThisUser.Spice = float.Parse(Spice_Textbox.Text);
+            try { mInstance.ThisUser.Spice = float.Parse(Spice_Textbox.Text); }
+            catch { }
         }
     }
 }
