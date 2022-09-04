@@ -18,11 +18,11 @@ namespace ecohack
         int mPence = 0;
         int mScore = 0;
 
-        float mSalty;
-        float mSweet;
-        float mSour;
-        float mBitter;
-        float mSpice;
+        double mSalty;
+        double mSweet;
+        double mSour;
+        double mBitter;
+        double mSpice;
 
         public User(string pFilepath)
         {
@@ -83,33 +83,73 @@ namespace ecohack
             }
         }
 
-        public float Salty
+        public double Salty
         {
             get { return mSalty; }
-            set { mSalty = value; updateUser(); }
+            set 
+            {
+                if (value > 10)
+                { value = 10; }
+                else if (value < 0)
+                { value = 0; }
+                mSalty = value;
+                updateUser(); 
+            }
 
         }
 
-        public float Sweet
+        public double Sweet
         {
             get { return mSweet; }
-            set { mSweet = value; updateUser(); }
+            set 
+            {
+                if (value > 10)
+                { value = 10; }
+                else if (value < 0)
+                { value = 0; }
+                mSweet = value;
+                updateUser();
+            }
         }
 
-        public float Sour
+        public double Sour
         {
             get { return mSour; }
-            set { mSour = value; updateUser(); }
+            set 
+            {
+                if (value > 10)
+                { value = 10; }
+                else if (value < 0)
+                { value = 0; }
+                mSour = value;
+                updateUser(); 
+            }
         }
-        public float Bitter
+        public double Bitter
         {
             get { return mBitter; }
-            set { mBitter = value; updateUser(); }
+            set 
+            {
+                if (value > 10)
+                { value = 10; }
+                else if (value < 0)
+                { value = 0; }
+                mBitter = value;
+                updateUser(); 
+            }
         }
-        public float Spice
+        public double Spice
         {
             get { return mSpice; }
-            set { mSpice = value; updateUser(); }
+            set 
+            {
+                if (value > 10)
+                { value = 10; }
+                else if (value < 0)
+                { value = 0; }
+                mSpice = value;
+                updateUser(); 
+            }
         }
 
         public int Score

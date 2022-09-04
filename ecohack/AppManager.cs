@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
+using static System.Formats.Asn1.AsnWriter;
 
 namespace ecohack
 {
@@ -68,6 +69,28 @@ namespace ecohack
             }
 
             return itemsToDisplay;
+        }
+
+        public void replaceMenuItem(MenuItem pItem)
+        {
+            for (int i = 0; i < mMenuItems.Count; i++ )
+            {
+
+                if (mMenuItems[i].Title == pItem.Title)
+                {
+                    mMenuItems[i] = pItem;
+                }
+            }
+
+            StreamWriter sw = new StreamWriter(pItem.Path);
+
+            sw.WriteLine(pItem.Title);
+            sw.WriteLine(pItem.Author);
+            sw.WriteLine(pItem.Rating);
+            sw.WriteLine(pItem.Description);
+            sw.WriteLine(pItem.Salty + "," + pItem.Sweet + "," + pItem.Sour + "," + pItem.Bitter + "," + pItem.Spice);
+
+            sw.Close();
         }
     }
 }

@@ -119,23 +119,23 @@ namespace ecohack
                 MenuItem3Star3_Image.Source = new BitmapImage(new Uri(@"/Images/FullStar.png", UriKind.Relative));
                 MenuItem3Star4_Image.Source = new BitmapImage(new Uri(@"/Images/FullStar.png", UriKind.Relative));
                 MenuItem3Star5_Image.Source = new BitmapImage(new Uri(@"/Images/FullStar.png", UriKind.Relative));
-                if (itemsToDisplay[2].Rating < 5)
+                if (itemsToDisplay[2].Rating < 4.5)
                 {
                     MenuItem3Star5_Image.Source = new BitmapImage(new Uri(@"/Images/EmptyStar.png", UriKind.Relative));
                 }
-                if (itemsToDisplay[2].Rating < 4)
+                if (itemsToDisplay[2].Rating < 3.5)
                 {
                     MenuItem3Star4_Image.Source = new BitmapImage(new Uri(@"/Images/EmptyStar.png", UriKind.Relative));
                 }
-                if (itemsToDisplay[2].Rating < 3)
+                if (itemsToDisplay[2].Rating < 2.5)
                 {
                     MenuItem3Star3_Image.Source = new BitmapImage(new Uri(@"/Images/EmptyStar.png", UriKind.Relative));
                 }
-                if (itemsToDisplay[2].Rating < 2)
+                if (itemsToDisplay[2].Rating < 1.5)
                 {
                     MenuItem3Star2_Image.Source = new BitmapImage(new Uri(@"/Images/EmptyStar.png", UriKind.Relative));
                 }
-                if (itemsToDisplay[2].Rating < 1)
+                if (itemsToDisplay[2].Rating < 0.5)
                 {
                     MenuItem3Star1_Image.Source = new BitmapImage(new Uri(@"/Images/EmptyStar.png", UriKind.Relative));
                 }
