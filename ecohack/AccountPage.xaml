@@ -30,6 +30,28 @@
             <TextBlock x:Name="UserName_Text" Text="Name" FontSize="30" TextAlignment="Center"/>
             <Image x:Name="userImage" Source="/Images/UserIcon2.PNG" Height="150" Width="150"/>
             <TextBlock x:Name="Balance_Text" Text="£0.00" FontSize="50" TextAlignment="Center" Foreground="Gold" Margin="0,10,0,0"/>
+            <TextBlock x:Name="Tastes_Text" Text="My Taste:" FontSize="30" TextAlignment="Center"/>
+            <TextBlock x:Name="TastesBracket_Text" Text="(Score out of 10)" FontSize="15" TextAlignment="Center"/>
+            <StackPanel Orientation="Horizontal" Margin="0,5,0,0">
+                <Label Content="Salty" FontSize="20"  HorizontalAlignment="Center"/>
+                <TextBox x:Name="Salty_Textbox" TextWrapping="Wrap" Text="" Margin="40,0,0,0" Background="LightGray" TextChanged="Salty_Text_Changed" Width="50" FontSize="20"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,5,0,0">
+                <Label Content="Sweet" FontSize="20"  HorizontalAlignment="Center"/>
+                <TextBox x:Name="Sweet_Textbox" TextWrapping="Wrap" Text="" Margin="30,0,0,0" Background="LightGray" TextChanged="Sweet_Text_Changed" Width="50" FontSize="20"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,5,0,0">
+                <Label Content="Sour" FontSize="20"  HorizontalAlignment="Center"/>
+                <TextBox x:Name="Sour_Textbox" TextWrapping="Wrap" Text="" Margin="41,0,0,0" Background="LightGray" TextChanged="Sour_Text_Changed" Width="50" FontSize="20"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,5,0,0">
+                <Label Content="Bitter" FontSize="20"  HorizontalAlignment="Center"/>
+                <TextBox x:Name="Bitter_Textbox" TextWrapping="Wrap" Text="" Margin="35,0,0,0" Background="LightGray" TextChanged="Bitter_Text_Changed" Width="50" FontSize="20"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,5,0,0">
+                <Label Content="Spice" FontSize="20"  HorizontalAlignment="Center"/>
+                <TextBox x:Name="Spice_Textbox" TextWrapping="Wrap" Text="" Margin="35,0,0,0" Background="LightGray" TextChanged="Spice_Text_Changed" Width="50" FontSize="20"/>
+            </StackPanel>
         </StackPanel>
     </Grid>
 </Page>

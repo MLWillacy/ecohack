@@ -12,6 +12,13 @@ namespace ecohack
         string mName;
         int mPound = 0;
         int mPence = 0;
+        int mScore = 0;
+
+        float mSalty;
+        float mSweet;
+        float mSour;
+        float mBitter;
+        float mSpice;
 
         public User(string pName)
         {
@@ -40,7 +47,34 @@ namespace ecohack
                     mPence = mPence - 99;
                 }
             }
+        }
 
+        public float Salty
+        {
+            get { return mSalty; }
+            set { mSalty = value; }
+        }
+
+        public float Sweet
+        {
+            get { return mSweet; }
+            set { mSweet = value; }
+        }
+
+        public float Sour
+        {
+            get { return mSour; }
+            set { mSour = value; }
+        }
+        public float Bitter
+        {
+            get { return mBitter; }
+            set { mBitter = value; }
+        }
+        public float Spice
+        {
+            get { return mSpice; }
+            set { mSpice = value; }
         }
     }
 }

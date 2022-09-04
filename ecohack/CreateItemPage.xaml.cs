@@ -78,6 +78,7 @@ namespace ecohack
             FileStream fs = File.Create(fileName);
             fs.Close();
 
+
             StreamWriter sw = new StreamWriter(fileName);
 
             sw.WriteLine(mTitle);
