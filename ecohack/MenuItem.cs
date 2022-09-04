@@ -1,4 +1,5 @@
 ﻿using System;
+using System.CodeDom.Compiler;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,8 +20,9 @@ namespace ecohack
         double mBitter;
         double mSpice;
         string mPath;
+        double mUserScore;
 
-        public MenuItem(string pTitle, string pAuthor, float pRating, string pDescription, string pTastes, string pPath)
+        public MenuItem(string pTitle, string pAuthor, float pRating, string pDescription, string pTastes, string pPath, User pUser)
         {
             mTitle = pTitle;
             mAuthor = pAuthor;
@@ -33,6 +35,30 @@ namespace ecohack
             mBitter = float.Parse(tastesSplit[3]);
             mSpice = float.Parse(tastesSplit[4]);
             mPath = pPath;
+
+            double tempScore;
+
+            if (pUser.Salty > mSalty)
+            { tempScore = pUser.Salty - mSalty; }
+            else { tempScore = mSalty - pUser.Salty; }
+
+            if (pUser.Sweet > mSweet)
+            { tempScore = tempScore + pUser.Sweet - mSweet; }
+            else { tempScore = mSweet - pUser.Sweet; }
+
+            if (pUser.Sour > mSour)
+            { tempScore = tempScore + pUser.Sour - mSour; }
+            else { tempScore = mSour - pUser.Sour; }
+
+            if (pUser.Bitter > mBitter)
+            { tempScore = tempScore + pUser.Bitter - mBitter; }
+            else { tempScore = mBitter - pUser.Bitter; }
+
+            if (pUser.Spice > mSpice)
+            { tempScore = tempScore + pUser.Spice - mSpice; }
+            else { tempScore = mSpice - pUser.Spice; }
+
+            mUserScore = tempScore * mRating;
         }
 
         public void updateItem()
@@ -59,6 +85,9 @@ namespace ecohack
 
         public string Description
         { get { return mDescription; } }
+
+        public double Score
+        { get { return mUserScore; } }
 
         public string Path
         { get { return mPath; } }

@@ -33,6 +33,8 @@ namespace ecohack
 
         private void loadMenuItems()
         {
+            mInstance.sortList();
+
             itemsToDisplay = mInstance.getMenuItems();
             if (itemsToDisplay == null)
             {

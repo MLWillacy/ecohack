@@ -37,11 +37,12 @@ namespace ecohack
             { Balance_Text.Text = "£" + mInstance.ThisUser.Pound + ".0" + mInstance.ThisUser.Pence; }
             else { Balance_Text.Text = "£" + mInstance.ThisUser.Pound + "." + mInstance.ThisUser.Pence; }
 
-            Salty_Textbox.Text = mInstance.ThisUser.Salty.ToString();
-            Sweet_Textbox.Text = mInstance.ThisUser.Sweet.ToString();
-            Sour_Textbox.Text = mInstance.ThisUser.Sour.ToString();
-            Bitter_Textbox.Text = mInstance.ThisUser.Bitter.ToString();
-            Spice_Textbox.Text = mInstance.ThisUser.Spice.ToString();
+            Salty_Textbox.Text = mInstance.ThisUser.Salty.ToString().Remove(1, mInstance.ThisUser.Salty.ToString().Length -1);
+            Sweet_Textbox.Text = mInstance.ThisUser.Sweet.ToString().Remove(1, mInstance.ThisUser.Sweet.ToString().Length -1); ;
+            Sour_Textbox.Text = mInstance.ThisUser.Sour.ToString().Remove(1, mInstance.ThisUser.Sour.ToString().Length -1); ;
+            Bitter_Textbox.Text = mInstance.ThisUser.Bitter.ToString().Remove(1, mInstance.ThisUser.Bitter.ToString().Length - 1);
+            Spice_Textbox.Text = mInstance.ThisUser.Spice.ToString().Remove(1, mInstance.ThisUser.Spice.ToString().Length - 1);
+
         }
 
         private void Home_Button_Clicked(object sender, RoutedEventArgs e)

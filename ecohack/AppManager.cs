@@ -16,8 +16,8 @@ namespace ecohack
 
         public AppManager(User pUser)
         {
-            LoadMenuItems();
             mUser = pUser;
+            LoadMenuItems();     
         }
 
         public int MenuPosition
@@ -49,7 +49,30 @@ namespace ecohack
                 float rating = float.Parse(lines[2]);
                 string descrip = lines[3];
                 string tastes = lines[4];
-                mMenuItems.Add(new MenuItem(title, author, rating, descrip, tastes, file));
+                mMenuItems.Add(new MenuItem(title, author, rating, descrip, tastes, file, mUser));
+            }
+
+
+            sortList();
+        }
+
+        public void sortList()
+        {
+            bool changeMade = true;
+
+            while (changeMade)
+            {
+                changeMade = false;
+                for (int i = 0; i < mMenuItems.Count - 1; i++)
+                {
+                    if (mMenuItems[i].Score > mMenuItems[i + 1].Score)
+                    {
+                        MenuItem temp = mMenuItems[i];
+                        mMenuItems[i] = mMenuItems[i + 1];
+                        mMenuItems[i + 1] = temp;
+                        changeMade = true;
+                    }
+                }
             }
         }
 
@@ -91,6 +114,8 @@ namespace ecohack
             sw.WriteLine(pItem.Salty + "," + pItem.Sweet + "," + pItem.Sour + "," + pItem.Bitter + "," + pItem.Spice);
 
             sw.Close();
+
+            sortList();
         }
     }
 }
