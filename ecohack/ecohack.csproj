@@ -16,6 +16,11 @@
     <None Remove="Images\HalfStar.PNG" />
     <None Remove="Images\Home.PNG" />
     <None Remove="Images\HomeBackground.PNG" />
+    <None Remove="Images\HomeBackground1.PNG" />
+    <None Remove="Images\HomeBackground2.PNG" />
+    <None Remove="Images\HomeBackground3.PNG" />
+    <None Remove="Images\HomeBackground4.PNG" />
+    <None Remove="Images\HomeBackground5.PNG" />
     <None Remove="Images\Plate.PNG" />
     <None Remove="Images\ScrollDown.PNG" />
     <None Remove="Images\ScrollUp.PNG" />
@@ -49,6 +54,21 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Images\HomeBackground.PNG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\HomeBackground1.PNG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\HomeBackground2.PNG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\HomeBackground3.PNG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\HomeBackground4.PNG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\HomeBackground5.PNG">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Images\Plate.PNG">

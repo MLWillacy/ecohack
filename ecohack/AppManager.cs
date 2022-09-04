@@ -47,7 +47,7 @@ namespace ecohack
                 string author = lines[1];
                 int rating = int.Parse(lines[2]);
                 string descrip = lines[3];
-                string tastes = lines[5];
+                string tastes = lines[4];
                 mMenuItems.Add(new MenuItem(title, author, rating, descrip, tastes, file));
             }
         }

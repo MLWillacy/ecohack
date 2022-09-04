@@ -27,8 +27,33 @@ namespace ecohack
             InitializeComponent();
             mMain = pMain;
             mInstance = pInstance;
+            setHomeBackground();
         }
 
+        private void setHomeBackground()
+        {
+            int score = mInstance.ThisUser.Score;
+            if (score > 20)
+            {
+                Background_Image.Source = new BitmapImage(new Uri(@"/Images/HomeBackground5.png", UriKind.Relative));
+            }
+            else if (score > 10)
+            {
+                Background_Image.Source = new BitmapImage(new Uri(@"/Images/HomeBackground4.png", UriKind.Relative));
+            }
+            else if (score > 5)
+            {
+                Background_Image.Source = new BitmapImage(new Uri(@"/Images/HomeBackground3.png", UriKind.Relative));
+            }
+            else if (score > 0)
+            {
+                Background_Image.Source = new BitmapImage(new Uri(@"/Images/HomeBackground2.png", UriKind.Relative));
+            }
+            else
+            {
+                Background_Image.Source = new BitmapImage(new Uri(@"/Images/HomeBackground1.png", UriKind.Relative));
+            }
+        }
         private void Plate_Button_Clicked(object sender, RoutedEventArgs e)
         {
             mMain.Content = new MenuPage(mMain,mInstance);

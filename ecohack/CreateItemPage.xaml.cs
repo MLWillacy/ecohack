@@ -88,6 +88,7 @@ namespace ecohack
             sw.Close();
 
             mInstance.ThisUser.Pence++;
+            mInstance.ThisUser.Score++;
 
             mMain.Content = new HomePage(mMain, mInstance);
 

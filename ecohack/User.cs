@@ -76,5 +76,11 @@ namespace ecohack
             get { return mSpice; }
             set { mSpice = value; }
         }
+
+        public int Score
+        {
+            get { return mScore; }
+            set { mScore = value; }
+        }
     }
 }

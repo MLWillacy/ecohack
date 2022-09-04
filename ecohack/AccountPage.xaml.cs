@@ -73,5 +73,10 @@ namespace ecohack
         {
             mInstance.ThisUser.Bitter = float.Parse(Bitter_Textbox.Text);
         }
+
+        private void Spice_Text_Changed(object sender, TextChangedEventArgs e)
+        {
+            mInstance.ThisUser.Spice = float.Parse(Spice_Textbox.Text);
+        }
     }
 }
